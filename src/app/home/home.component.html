@@ -1,0 +1,85 @@
+<!--<img src="\assets\banner.png" alt="" width="600" height="500">-->
+<div class="container">
+    <div class="row">
+        <div class="column-custome">
+            <img src=" \assets\banner.png" alt="banner-img" width="100%" height="100%" class="banner-img">
+        </div>
+        <div class="column-custome">
+            <div class="row" style="padding-left: 13px;">
+                <div class="col-6 d-flex align-items-center justify-content-center services service-box"
+                    (click)="navigate()">
+                    <img src="https://via.placeholder.com/50" alt="banner-img" width="50px" height="50px"
+                        class="rounded-circle">
+                    <h5 style="padding-top: 15px;">Service 1</h5>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed
+                        do eiusmod</p>
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-center services service-box"
+                    (click)="navigate()">
+                    <img src="https://via.placeholder.com/50" alt="banner-img" width="50px" height="50px"
+                        class="rounded-circle">
+                    <h5 style="padding-top: 15px;">Service 2</h5>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed
+                        do eiusmod</p>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 13px;">
+                <div class="col-6 d-flex align-items-center justify-content-center services service-box"
+                    (click)="navigate()">
+                    <img src="https://via.placeholder.com/50" alt="banner-img" width="50px" height="50px"
+                        class="rounded-circle">
+                    <h5 style="padding-top: 15px;">Service 3</h5>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed
+                        do eiusmod</p>
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-center services service-box"
+                    (click)="navigate()">
+                    <img src="https://via.placeholder.com/50" alt="banner-img" width="50px" height="50px"
+                        class="rounded-circle">
+                    <h5 style="padding-top: 15px;">Service 4</h5>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed
+                        do eiusmod</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center pricing-header">
+        <h1 style="font-weight: bold;">Pricing</h1>
+        <h5 class="pricing-tagline" style="text-align: center;">Now you can smartly book your appointments hassle free.
+            Reshedule without any
+            tension.</h5>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center pricing-header">
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4" *ngFor="let subscription of _subscriptions">
+                <div class="card">
+                    <div class="card-body">
+                        <p style="font-weight: 600;">Best Value</p>
+                        <h1>{{subscription.price === 0 ? 'Free':subscription.price}}</h1>
+                        <button>Select Plan</button>
+                        <ul class="list">
+                            <li class="li-item">Now you can smartly book your
+                                appointments hassle</li>
+                            <li class="li-item">Now you can smartly book your
+                                appointments hassle</li>
+                            <li class="li-item">Now you can smartly book your
+                                appointments hassle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center pricing-header">
+            <h1 style="font-weight: bold;">Make it easy to schedule with you</h1>
+            <h5 class="pricing-tagline" style="text-align: center;">Now you can smartly book your appointments hassle
+                free.
+                Reshedule without any
+                tension.</h5>
+        </div>
+    </div>

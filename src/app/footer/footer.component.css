@@ -1,0 +1,9 @@
+.bg-theme-color {
+  background-color: #e2f3ee;
+}
+
+@media (min-width: 992px) {
+  .footer-links {
+    padding-top: 30px;
+  }
+}
